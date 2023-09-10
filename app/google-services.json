@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "916592248716",
+    "firebase_url": "https://travel-2da89-default-rtdb.firebaseio.com",
+    "project_id": "travel-2da89",
+    "storage_bucket": "travel-2da89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916592248716:android:b60a4496e14cdf2951b8a9",
+        "android_client_info": {
+          "package_name": "com.travel.croatia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916592248716-tssh125v1fg10q9h9471h6gsbj1583mq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.travel.croatia",
+            "certificate_hash": "9976748fc97d77a18721cd87bae85515b3443ea6"
+          }
+        },
+        {
+          "client_id": "916592248716-5k9o2cr79li4lh71ri1s1iqgb2b7pv5l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzMwjCTvIMfKC7Il24JVmJXZmxIBQ-Ols"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916592248716-5k9o2cr79li4lh71ri1s1iqgb2b7pv5l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

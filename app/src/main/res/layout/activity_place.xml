@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_30mdp">
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/indicatorLayout"/>
+
+    <LinearLayout
+        android:id="@+id/indicatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/viewPager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/indicatorLayout"
+        android:id="@+id/placeName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/_20mdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="@dimen/_18font_mdp"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/placeName"
+        android:id="@+id/placeDes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/_10mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:justificationMode="inter_word"
+        android:layout_marginHorizontal="@dimen/_10mdp"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="@dimen/_14font_mdp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/placeDes"
+        android:id="@+id/openMapText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/_20mdp"
+        android:gravity="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Click to Open Location on Map"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="@dimen/_18font_mdp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250mdp"
+        android:scaleType="fitStart"
+        android:id="@+id/mapImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_20mdp"
+        app:layout_constraintTop_toBottomOf="@id/openMapText"
+        android:layout_marginHorizontal="@dimen/_20mdp"/>
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/goToMap"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="@dimen/_50mdp"-->
+<!--        android:layout_marginHorizontal="@dimen/_20mdp"-->
+<!--        android:layout_marginTop="@dimen/_15mdp"-->
+<!--        android:background="@drawable/button_bg"-->
+<!--        android:visibility="gone"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:text="Show Distance On Map"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_14font_mdp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/mapImg" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
